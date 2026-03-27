@@ -16853,6 +16853,8 @@ void Unit::SetDisplayId(uint32 modelId, float displayScale /*=1.f*/)
 
     SetObjectScale(displayScale);
 
+    RecalculateObjectScale();
+    
     sScriptMgr->OnDisplayIdChange(this, modelId);
 }
 
